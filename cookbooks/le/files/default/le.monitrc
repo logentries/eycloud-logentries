@@ -1,6 +1,0 @@
-# Author: Greg Blasko
-
-check process le_monitor
-with pidfile /var/run/logentries.pid
-start program = "/usr/local/bin/le_monitor start" with timeout 30 seconds
-stop program = "/usr/local/bin/le_monitor stop" with timeout 30 seconds
