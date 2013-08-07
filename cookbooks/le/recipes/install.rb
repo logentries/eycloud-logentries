@@ -23,7 +23,7 @@ execute "ebuild le-0.0.0.ebuild digest" do
 end
 
 package 'dev-util/le' do
-  version node['0.0.0']
+  version '0.0.0'
   action :install
 end
 
