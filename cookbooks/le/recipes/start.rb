@@ -4,6 +4,7 @@
 #
 
 # Restart the le agent
-execute 'start le agent' do
-	command %{/etc/init.d/logentries restart}
+service 'logentries' do
+  supports :stop => true, :start => true, :restart => true
+  action [ :restart ]
 end
